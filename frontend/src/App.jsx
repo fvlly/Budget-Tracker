@@ -1,23 +1,18 @@
 import React from "react";
-
 import { Header } from "./components/Header";
 import { AccountsCard } from "./components/AccountsCard";
-import { TransactionSummary } from "./components/TransactionSummary";
-import { TransactionCard } from "./components/TransactionCard";
+import { TransactionList } from "./components/TransactionList";
+
+import { GlobalProvider } from "./context/GlobalState";
 
 export const App = () => {
   return (
-    <>
+    <GlobalProvider>
       <div className="app-container">
         <Header />
         <AccountsCard />
-        <TransactionSummary />
-        <div className="flow m-top text-dark">
-          <TransactionCard description="Food" amount="40000.00" />
-          <TransactionCard description="Toiletries" amount="2500.00" />
-          <TransactionCard description="Internet" amount="20000.00" />
-        </div>
+        <TransactionList />
       </div>
-    </>
+    </GlobalProvider>
   );
 };

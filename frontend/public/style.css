@@ -193,6 +193,9 @@ select {
 .m-top {
   margin-top: var(--m-top, 2.5rem);
 }
+.m-bottom {
+  margin-bottom: var(--m-top, 2rem);
+}
 
 .p-top {
   padding-top: var(--p-top, 2rem);
@@ -213,8 +216,13 @@ select {
 }
 
 .account-container {
-    background: rgb(36,28,0);
-    background: linear-gradient(90deg, rgba(36,28,0,1) 0%, rgba(78,226,13,1) 0%, rgba(255,29,0,1) 85%);
+  background: rgb(36, 28, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 28, 0, 1) 0%,
+    rgba(78, 226, 13, 1) 0%,
+    rgba(255, 29, 0, 1) 85%
+  );
   border-radius: 1rem;
   min-width: 300px;
 }
@@ -231,6 +239,10 @@ select {
   margin-left: auto;
 }
 
+ul.list {
+  margin: 0;
+}
+
 .btn-container {
   width: 100%;
 }
@@ -245,4 +257,11 @@ select {
   justify-content: space-between;
   align-items: center;
   border-right: 5px solid gray;
+}
+
+.expense {
+  border-right: 5px solid hsl(0, 100%, 50%);
+}
+.income {
+  border-right: 5px solid hsl(120, 91%, 29%);
 }
