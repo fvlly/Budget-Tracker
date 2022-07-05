@@ -210,6 +210,14 @@ select {
   padding-left: var(--p-left, 1rem);
 }
 
+/* ---text alignment */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align:left;
+}
+
 /* ---component utilities--- */
 .app-container {
   margin: 0 auto;
@@ -221,8 +229,8 @@ select {
   background: linear-gradient(
     90deg,
     rgba(36, 28, 0, 1) 0%,
-    rgba(78, 226, 13, 1) 0%,
-    rgba(255, 29, 0, 1) 85%
+    hsl(152, 69%, 31%) 0%,
+    hsl(354, 70%, 54%) 85%
   );
   border-radius: 1rem;
   min-width: 300px;
